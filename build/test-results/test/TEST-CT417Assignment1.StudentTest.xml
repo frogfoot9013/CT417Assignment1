@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CT417Assignment1.StudentTest" tests="48" skipped="0" failures="0" errors="0" timestamp="2021-10-15T19:50:35" hostname="DESKTOP-6KM3SC0" time="0.136">
+  <properties/>
+  <testcase name="testGetRegisteredCourses" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testStudentConstructorFailMalformedDate" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testAddStudentToCourse" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testRemoveStudentFromCourse" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testStudentConstructor" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testGetStudentId" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testRemoveModuleFail" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testAddStudentToCourseFail" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetName" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testRemoveModule" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testAddModule" classname="CT417Assignment1.StudentTest" time="0.027"/>
+  <testcase name="testSetStudentId" classname="CT417Assignment1.StudentTest" time="0.005"/>
+  <testcase name="testSetDobFailFutureDate" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testAddModuleFail" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetUsername" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testSetDobFailMalformedDate" classname="CT417Assignment1.StudentTest" time="0.006"/>
+  <testcase name="testGetAge" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetDob" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testRemoveStudentFromCourseFail" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testSetName" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testStudentConstructorFailFutureDate" classname="CT417Assignment1.StudentTest" time="0.004"/>
+  <testcase name="testSetAge" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testSetDob" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetStudentModules" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetRegisteredCourses" classname="CT417Assignment1.StudentTest" time="0.002"/>
+  <testcase name="testStudentConstructorFailMalformedDate" classname="CT417Assignment1.StudentTest" time="0.002"/>
+  <testcase name="testAddStudentToCourse" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testRemoveStudentFromCourse" classname="CT417Assignment1.StudentTest" time="0.002"/>
+  <testcase name="testStudentConstructor" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetStudentId" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testRemoveModuleFail" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testAddStudentToCourseFail" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testGetName" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testRemoveModule" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testAddModule" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testSetStudentId" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testSetDobFailFutureDate" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testAddModuleFail" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetUsername" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testSetDobFailMalformedDate" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetAge" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testGetDob" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testRemoveStudentFromCourseFail" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testSetName" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testStudentConstructorFailFutureDate" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testSetAge" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <testcase name="testSetDob" classname="CT417Assignment1.StudentTest" time="0.001"/>
+  <testcase name="testGetStudentModules" classname="CT417Assignment1.StudentTest" time="0.0"/>
+  <system-out><![CDATA[Test Student class method getRegisteredCourses
+Test Student Constructor Fail with malformed date.
+Value 29 for dayOfMonth must be in the range [1,28]: year: 2001 month: 2
+Test Student class method addStudentToCourse
+Test Student class method removeStudentFromCourse
+Test Student Constructor with valid input 
+Test Student class method getStudentId
+Test Student class method removeModule with invalid input
+Student is already not registered for this course!
+Test Student class method addStudentToCourse with invalid input
+Student already registered for this course!
+Test Student class getName method
+Test Student class method removeModule
+Test Student class method addModule
+Test Student class method setStudentId
+Test setDob Fail with future date.
+Date of birth cannot be in the future!
+Test Student class method addModule with invalid input
+Student is already registered for this module!
+Test Student class method getUsername
+Test setDob Fail with Malformed Date.
+Value 29 for dayOfMonth must be in the range [1,28]: year: 2001 month: 2
+Test Student class getAge method
+Test Student class method getDob
+Test Student class method removeStudentFromCourse with invalid input
+Student is already not registered for this course!
+Test Student class setName method
+Test Student Constructor Fail with future date.
+Date of birth cannot be in the future!
+Test Student class setAge method
+Test Student class method setDob
+Test Student class method getStudentModules
+Test Student class method getRegisteredCourses
+Test Student Constructor Fail with malformed date.
+Value 29 for dayOfMonth must be in the range [1,28]: year: 2001 month: 2
+Test Student class method addStudentToCourse
+Test Student class method removeStudentFromCourse
+Test Student Constructor with valid input 
+Test Student class method getStudentId
+Test Student class method removeModule with invalid input
+Student is already not registered for this course!
+Test Student class method addStudentToCourse with invalid input
+Student already registered for this course!
+Test Student class getName method
+Test Student class method removeModule
+Test Student class method addModule
+Test Student class method setStudentId
+Test setDob Fail with future date.
+Date of birth cannot be in the future!
+Test Student class method addModule with invalid input
+Student is already registered for this module!
+Test Student class method getUsername
+Test setDob Fail with Malformed Date.
+Value 29 for dayOfMonth must be in the range [1,28]: year: 2001 month: 2
+Test Student class getAge method
+Test Student class method getDob
+Test Student class method removeStudentFromCourse with invalid input
+Student is already not registered for this course!
+Test Student class setName method
+Test Student Constructor Fail with future date.
+Date of birth cannot be in the future!
+Test Student class setAge method
+Test Student class method setDob
+Test Student class method getStudentModules
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
