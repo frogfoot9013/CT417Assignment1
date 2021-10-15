@@ -1,8 +1,0 @@
-CT417Assignment1/StudentTest.java
- CT417Assignment1.StudentTest
-CT417Assignment1/CourseProgrammeTest.java
- CT417Assignment1.CourseProgrammeTest
-CT417Assignment1/ModuleTest.java
- CT417Assignment1.ModuleTest
-CT417Assignment1/CT417Assignment1Suite.java
- CT417Assignment1.CT417Assignment1Suite
