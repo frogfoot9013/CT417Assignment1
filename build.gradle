@@ -1,11 +1,13 @@
 apply plugin: 'java'
 apply plugin: 'jacoco'
 apply plugin: 'maven-publish'
-    
+
 group = 'com.github.frogfoot9013'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
+    mavenLocal()
     maven { url "https://jitpack.io" }
 }
 
@@ -14,4 +16,16 @@ dependencies {
     implementation 'org.terasoluna.gfw:terasoluna-gfw-jodatime:5.7.0.RELEASE'
     testImplementation     'junit:junit:4.13'
     implementation 'com.github.jitpack:gradle-simple:1.0'
+}
+
+publishing{
+    publications{
+        maven(MavenPublication){
+            groupId = 'com.github.frogfoot9013'
+            artifactId = 'CT417Assignment1'
+            version = '1.0.0'
+            
+            from components.java
+        }
+    }
 }
