@@ -1,0 +1,6 @@
+CT417Assignment1/CourseProgramme.java
+ CT417Assignment1.CourseProgramme
+CT417Assignment1/Module.java
+ CT417Assignment1.Module
+CT417Assignment1/Student.java
+ CT417Assignment1.Student
