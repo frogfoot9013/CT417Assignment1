@@ -78,7 +78,7 @@ public class StudentTest {
             fail("This should not be reached, this should be invalid.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(Student.FUTURE_DOB_ERROR, e.getMessage());
+            assertEquals(Student.FUTURE_DOB_ERR, e.getMessage());
         }
     }
 
@@ -182,7 +182,7 @@ public class StudentTest {
             fail("This should not be reached, this should be invalid.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(Student.FUTURE_DOB_ERROR, e.getMessage());
+            assertEquals(Student.FUTURE_DOB_ERR, e.getMessage());
         }  
     }
 
@@ -229,8 +229,8 @@ public class StudentTest {
     public void testGetStudentModules() {
         System.out.println("Test Student class method getStudentModules");
         Student instance = new Student("Joe Smith", 2000, 9, 14, 19321);
-        ArrayList<Module> expResult = new ArrayList<>();
-        ArrayList<Module> result = instance.getStudentModules();
+        ArrayList<CourseModule> expResult = new ArrayList<>();
+        ArrayList<CourseModule> result = instance.getStudentModules();
         assertEquals(expResult, result);
     }
 
@@ -240,7 +240,7 @@ public class StudentTest {
     @Test
     public void testAddModule() {
         System.out.println("Test Student class method addModule");
-        Module input = new Module("Programming", "C100");
+        CourseModule input = new CourseModule("Programming", "C100");
         Student instance = new Student("Joe Smith", 2000, 9, 14, 19321);
         instance.addModule(input);
         assertTrue(instance.getStudentModules().contains(input));
@@ -252,7 +252,7 @@ public class StudentTest {
     @Test
     public void testAddModuleFail(){
         System.out.println("Test Student class method addModule with invalid input");
-        Module input = new Module("Programming", "C100");
+        CourseModule input = new CourseModule("Programming", "C100");
         Student instance = new Student("Joe Smith", 2000, 9, 14, 19321);
         instance.addModule(input);
         try{
@@ -260,7 +260,7 @@ public class StudentTest {
             fail("This should not be reached.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(Student.MODULE_ALREADY_REGISTERED_DESC, e.getMessage());
+            assertEquals(Student.MODULE_ALREADY_REGISTERED_ERR, e.getMessage());
         }
     }
 
@@ -270,7 +270,7 @@ public class StudentTest {
     @Test
     public void testRemoveModule() {
         System.out.println("Test Student class method removeModule");
-        Module input = new Module("Programming", "C100");
+        CourseModule input = new CourseModule("Programming", "C100");
         Student instance = new Student("Joe Smith", 2000, 9, 14, 19321);
         instance.addModule(input);
         instance.removeModule(input);
@@ -283,14 +283,14 @@ public class StudentTest {
     @Test
     public void testRemoveModuleFail(){
         System.out.println("Test Student class method removeModule with invalid input");
-        Module input = new Module("Programming", "C100");
+        CourseModule input = new CourseModule("Programming", "C100");
         Student instance = new Student("Joe Smith", 2000, 9, 14, 19321);
         try{
             instance.removeModule(input);
             fail("This should not be reached");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(Student.MODULE_ALREADY_REMOVED_DESC, e.getMessage());
+            assertEquals(Student.MODULE_ALREADY_REMOVED_ERR, e.getMessage());
         }
     }
     
@@ -332,7 +332,7 @@ public class StudentTest {
             fail("This should not be reached.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(Student.COURSE_ALREADY_REGISTERED_DESC, e.getMessage());
+            assertEquals(Student.COURSE_ALREADY_REGISTERED_ERR, e.getMessage());
         }
     }
 
@@ -362,7 +362,7 @@ public class StudentTest {
             fail("This should not be reached.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(Student.COURSE_ALREADY_REMOVED_DESC, e.getMessage());
+            assertEquals(Student.COURSE_ALREADY_REMOVED_ERR, e.getMessage());
         }
         
     }

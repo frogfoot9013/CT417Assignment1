@@ -16,7 +16,7 @@ import org.junit.runners.Suite;
  * @author Anna Hunt (18484674)
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({CT417Assignment1.ModuleTest.class, CT417Assignment1.StudentTest.class, CT417Assignment1.CourseProgrammeTest.class})
+@Suite.SuiteClasses({CT417Assignment1.CourseModuleTest.class, CT417Assignment1.StudentTest.class, CT417Assignment1.CourseProgrammeTest.class})
 public class CT417Assignment1Suite {
 
     @BeforeClass

@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *
  * @author Anna Hunt (18484674)
  */
-public class Module {
+public class CourseModule {
     
     private String moduleName;
     private String moduleId;
@@ -17,12 +17,12 @@ public class Module {
     private ArrayList<CourseProgramme> associatedCourses;
     
     // exception messages
-    public static final String STUDENT_ALREADY_REGISTERED_DESC = "Student is already registered for this module!";
-    public static final String STUDENT_ALREADY_REMOVED_DESC = "Student is already not registered for this module!";
-    public static final String COURSE_ALREADY_REGISTERED_DESC = "Module is already part of course!";
-    public static final String COURSE_ALREADY_REMOVED_DESC = "Module is already not part of course!";
+    public static final String STUDENT_ALREADY_REGISTERED_ERR = "Student is already registered for this module!";
+    public static final String STUDENT_ALREADY_REMOVED_ERR = "Student is already not registered for this module!";
+    public static final String COURSE_ALREADY_REGISTERED_ERR = "Module is already part of course!";
+    public static final String COURSE_ALREADY_REMOVED_ERR = "Module is already not part of course!";
     
-    public Module(String inputName, String inputId){
+    public CourseModule(String inputName, String inputId){
         this.moduleName = inputName;
         this.moduleId = inputId;
         this.enrolledStudents = new ArrayList<>();
@@ -54,7 +54,7 @@ public class Module {
     // add Student to enrolled list
     public void addStudent(Student input) throws IllegalArgumentException{
         if (input.getStudentModules().contains(this) && enrolledStudents.contains(input)){
-            throw new IllegalArgumentException(Module.STUDENT_ALREADY_REGISTERED_DESC);
+            throw new IllegalArgumentException(CourseModule.STUDENT_ALREADY_REGISTERED_ERR);
         }
         else{
             input.getStudentModules().add(this);
@@ -65,7 +65,7 @@ public class Module {
     // remove Student from enrolled list
     public void removeStudent(Student input) throws IllegalArgumentException{
         if (!(input.getStudentModules().contains(this) && enrolledStudents.contains(input))){
-            throw new IllegalArgumentException(Module.STUDENT_ALREADY_REMOVED_DESC);
+            throw new IllegalArgumentException(CourseModule.STUDENT_ALREADY_REMOVED_ERR);
         }
         else{
             input.getStudentModules().remove(this);
@@ -81,7 +81,7 @@ public class Module {
     // associate course with module
     public void associateCourseWithModule(CourseProgramme input) throws IllegalArgumentException{
         if (input.getCourseModules().contains(this) && associatedCourses.contains(input)){
-            throw new IllegalArgumentException(Module.COURSE_ALREADY_REGISTERED_DESC);
+            throw new IllegalArgumentException(CourseModule.COURSE_ALREADY_REGISTERED_ERR);
         }
         else{
             input.getCourseModules().add(this);
@@ -92,7 +92,7 @@ public class Module {
     // remove course from module
     public void removeCourseFromModule(CourseProgramme input) throws IllegalArgumentException{
        if (!(input.getCourseModules().contains(this) && associatedCourses.contains(input))){
-           throw new IllegalArgumentException(Module.COURSE_ALREADY_REMOVED_DESC);
+           throw new IllegalArgumentException(CourseModule.COURSE_ALREADY_REMOVED_ERR);
        }
        else{
            input.getCourseModules().remove(this);

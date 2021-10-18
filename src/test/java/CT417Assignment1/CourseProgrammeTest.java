@@ -78,7 +78,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, this should be invalid.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.START_DATE_FIRST_DESC, e.getMessage());
+            assertEquals(CourseProgramme.START_DATE_FIRST_ERR, e.getMessage());
         }
     }
 
@@ -93,7 +93,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, this should be invalid.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.IDENTICAL_DATES_DESC, e.getMessage());
+            assertEquals(CourseProgramme.IDENTICAL_DATES_ERR, e.getMessage());
         }
     }
 
@@ -202,7 +202,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, this should be an invalid input");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.START_DATE_FIRST_DESC, e.getMessage());
+            assertEquals(CourseProgramme.START_DATE_FIRST_ERR, e.getMessage());
         }
     }
     
@@ -219,7 +219,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, this should be an invalid input.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.IDENTICAL_DATES_DESC, e.getMessage());
+            assertEquals(CourseProgramme.IDENTICAL_DATES_ERR, e.getMessage());
         }
     }
 
@@ -280,7 +280,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, this should be an invalid input");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.END_DATE_LAST_DESC, e.getMessage());
+            assertEquals(CourseProgramme.END_DATE_LAST_ERR, e.getMessage());
         }
     }
     
@@ -297,7 +297,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, this should be an invalid input.");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.IDENTICAL_DATES_DESC, e.getMessage());
+            assertEquals(CourseProgramme.IDENTICAL_DATES_ERR, e.getMessage());
         }
     }
 
@@ -309,8 +309,8 @@ public class CourseProgrammeTest {
     public void testGetCourseModules() {
         System.out.println("Test CourseProgramme method getCourseModules");
         CourseProgramme instance = new CourseProgramme("Computer Science", "CS", 2021, 9, 5, 2022, 5, 15);
-        ArrayList<Module> expResult = new ArrayList<>();
-        ArrayList<Module> result = instance.getCourseModules();
+        ArrayList<CourseModule> expResult = new ArrayList<>();
+        ArrayList<CourseModule> result = instance.getCourseModules();
         assertEquals(expResult, result);
     }
 
@@ -320,7 +320,7 @@ public class CourseProgrammeTest {
     @Test
     public void testAddModuleToCourse() {
         System.out.println("Test CourseProgramme method addModuleToCourse");
-        Module input = new Module("Programming", "C100");
+        CourseModule input = new CourseModule("Programming", "C100");
         CourseProgramme instance = new CourseProgramme("Computer Science", "CS", 2021, 9, 5, 2022, 5, 15);
         instance.addModuleToCourse(input);
         assertTrue(instance.getCourseModules().contains(input));
@@ -332,7 +332,7 @@ public class CourseProgrammeTest {
     @Test
     public void testAddModuleToCourseAlreadyAdded() {
         System.out.println("test CourseProgramme method addModuleToCourse with adding a module already added");
-        Module input = new Module("Programming", "C100");
+        CourseModule input = new CourseModule("Programming", "C100");
         CourseProgramme instance = new CourseProgramme("Computer Science", "CS", 2021, 9, 5, 2022, 5, 15);
         instance.addModuleToCourse(input);
         try{
@@ -340,7 +340,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, this input should be invalid");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.MODULE_ALREADY_REGISTERED_DESC, e.getMessage());
+            assertEquals(CourseProgramme.MODULE_ALREADY_REGISTERED_ERR, e.getMessage());
         }
     }
 
@@ -350,7 +350,7 @@ public class CourseProgrammeTest {
     @Test
     public void testRemoveModuleFromCourse() {
         System.out.println("Test CourseProgramme method removeModuleFromCourse");
-        Module input = new Module("Programming", "C100");
+        CourseModule input = new CourseModule("Programming", "C100");
         CourseProgramme instance = new CourseProgramme("Computer Science", "CS", 2021, 9, 5, 2022, 5, 15);
         instance.addModuleToCourse(input);
         instance.removeModuleFromCourse(input);
@@ -363,14 +363,14 @@ public class CourseProgrammeTest {
     @Test
     public void testRemoveModuleFromCourseModuleAlreadyRemoved(){
         System.out.println("Test removeModuleFromCourse with module already removed.");
-        Module input = new Module("Programming", "C100");
+        CourseModule input = new CourseModule("Programming", "C100");
         CourseProgramme instance = new CourseProgramme("Computer Science", "CS", 2021, 9, 5, 2022, 5, 15);
         try{
             instance.removeModuleFromCourse(input);
             fail("This should not be reached, as an exception should be thrown before reaching here");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.MODULE_ALREADY_REMOVED_DESC, e.getMessage());
+            assertEquals(CourseProgramme.MODULE_ALREADY_REMOVED_ERR, e.getMessage());
         }
     }
 
@@ -412,7 +412,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, this input should be invalid");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.STUDENT_ALREADY_REGISTERED_DESC, e.getMessage());
+            assertEquals(CourseProgramme.STUDENT_ALREADY_REGISTERED_ERR, e.getMessage());
         }
     }
 
@@ -442,7 +442,7 @@ public class CourseProgrammeTest {
             fail("This should not be reached, as an exception should be thrown before reaching here");
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
-            assertEquals(CourseProgramme.STUDENT_ALREADY_REMOVED_DESC, e.getMessage());
+            assertEquals(CourseProgramme.STUDENT_ALREADY_REMOVED_ERR, e.getMessage());
         }
     }
     
