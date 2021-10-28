@@ -1,9 +1,9 @@
-apply plugin: 'java'
+apply plugin: 'war'
 apply plugin: 'jacoco'
 apply plugin: 'maven-publish'
 
 group = 'com.github.frogfoot9013'
-version = 'v1.0.2'
+version = 'v1.0.3'
 
 repositories {
     mavenCentral()
@@ -23,7 +23,7 @@ publishing{
         maven(MavenPublication){
             groupId = 'com.github.frogfoot9013'
             artifactId = 'CT417Assignment1'
-            version = 'v1.0.2'
+            version = 'v1.0.3'
             
             from components.java
         }
