@@ -3,7 +3,7 @@ apply plugin: 'jacoco'
 apply plugin: 'maven-publish'
 
 group = 'com.github.frogfoot9013'
-version = 'v1.0.3'
+version = 'v1.0.4'
 
 repositories {
     mavenCentral()
@@ -18,12 +18,16 @@ dependencies {
     implementation 'com.github.jitpack:gradle-simple:1.0'
 }
 
+test {
+    useJUnit()
+}
+
 publishing{
     publications{
         maven(MavenPublication){
             groupId = 'com.github.frogfoot9013'
             artifactId = 'CT417Assignment1'
-            version = 'v1.0.3'
+            version = 'v1.0.4'
             
             from components.java
         }
