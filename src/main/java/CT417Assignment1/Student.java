@@ -124,7 +124,7 @@ public class Student {
             throw new IllegalArgumentException(Student.MODULE_ALREADY_REMOVED_ERR);
         }
         else{
-            input.getEnrolledStudents().add(this);
+            input.getEnrolledStudents().remove(this);
             this.studentModules.remove(input);
         }
     }

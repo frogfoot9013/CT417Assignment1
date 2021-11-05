@@ -1,0 +1,186 @@
+<Test CourseModule class method deassociateCourseFromModule
+4Test CourseModule class method getEnrolledStudents
++Test CourseModule class method addStudent
+%Test CourseModule Class Constructor
+:Test CourseModule class method associateCourseWithModule
+,Test CourseModule class method setModuleId
+.Test CourseModule class method getModuleName
+	,Test CourseModule class method getModuleId
+
+OTest CourseModule class method deassociateCourseFromModule with invalid input
+
+'Module is already not part of course!
+.Test CourseModule class method removeStudent
+MTest CourseModule class method associateCourseWithModule with invalid input
+#Module is already part of course!
+.Test CourseModule class method setModuleName
+5Test CourseModule class method getAssociatedCourses
+ATest CourseModule class method addStudent with invalid argument
+0Student is already registered for this module!
+DTest CourseModule class method removeStudent with invalid argument
+4Student is already not registered for this module!
+Rtest CourseProgramme method addModuleToCourse with adding a module already added
+#Module is already part of course!
+0Test CourseProgramme method addStudentToCourse
+=test addStudentToCourse with adding a Student already added
++Student is already registered for course!
+5Test CourseProgramme method removeStudentFromCourse
+/Test CourseProgramme method getCourseStudents
+(Test CourseProgramme method getEndDate
+/Test CourseProgramme method addModuleToCourse
+*Test setEndDate with malformed argument.
+JValue 35 for dayOfMonth must be in the range [1,31]: year: 2022 month: 5
+*Test CourseProgramme method getStartDate
+8Test setStartDate with start date later than end date.
+%Start date must be before end date!
+@Test CourseProgramme Constructor with malformed date argument.
+JValue 31 for dayOfMonth must be in the range [1,28]: year: 2022 month: 2
+,Test setStartDate with malformed argument.
+JValue 31 for dayOfMonth must be in the range [1,28]: year: 2021 month: 2
+FTest CourseProgramme Constructor with start date after the end date.
+%Start date must be before end date!
++Test CourseProgramme method getCourseName
+ 4Test CourseProgramme method removeModuleFromCourse
+!;Test removeStudentFromCourse with module already removed.
+!/Student is already not registered for course!
+"%Test setStartDate with valid input.
+#+Test CourseProgramme method setCourseName
+$BTest setStartDate with start date identical to existing end date
+$,Start and end dates must not be identical.
+%:Test removeModuleFromCourse with module already removed.
+%'Module is already not part of course!
+&(Test CourseProgramme method setEndDate
+'.Test CourseProgramme method getCourseModules
+(7Test setEndDate with earlier end date than start date
+($End date must be after start date!
+)ETest CourseProgramme Constructor with idential start and end dates.
+),Start and end dates must not be identical.
+*)Test CourseProgramme method setCourseId
++)Test CourseProgramme method getCourseId
+,?Test seEndDate with end date identical to existing Start date
+,,Start and end dates must not be identical.
+-7Test CourseProgramme Constructor with valid argument.
+.<Test CourseModule class method deassociateCourseFromModule
+/4Test CourseModule class method getEnrolledStudents
+0+Test CourseModule class method addStudent
+1%Test CourseModule Class Constructor
+2:Test CourseModule class method associateCourseWithModule
+3,Test CourseModule class method setModuleId
+4.Test CourseModule class method getModuleName
+5,Test CourseModule class method getModuleId
+6OTest CourseModule class method deassociateCourseFromModule with invalid input
+6'Module is already not part of course!
+7.Test CourseModule class method removeStudent
+8MTest CourseModule class method associateCourseWithModule with invalid input
+8#Module is already part of course!
+9.Test CourseModule class method setModuleName
+:5Test CourseModule class method getAssociatedCourses
+;ATest CourseModule class method addStudent with invalid argument
+;0Student is already registered for this module!
+<DTest CourseModule class method removeStudent with invalid argument
+<4Student is already not registered for this module!
+>=0Test Student class method getRegisteredCourses
+>?4Test Student Constructor Fail with malformed date.
+>?JValue 29 for dayOfMonth must be in the range [1,28]: year: 2001 month: 2
+>@.Test Student class method addStudentToCourse
+>A3Test Student class method removeStudentFromCourse
+>B,Test Student Constructor with valid input 
+>C(Test Student class method getStudentId
+>D;Test Student class method removeModule with invalid input
+>D4Student is already not registered for this course!
+>EATest Student class method addStudentToCourse with invalid input
+>E-Student already registered for this course!
+>F#Test Student class getName method
+>G(Test Student class method removeModule
+>H%Test Student class method addModule
+>I(Test Student class method setStudentId
+>J$Test setDob Fail with future date.
+>J(Date of birth cannot be in the future!
+>K8Test Student class method addModule with invalid input
+>K0Student is already registered for this module!
+>L'Test Student class method getUsername
+>M'Test setDob Fail with Malformed Date.
+>MJValue 29 for dayOfMonth must be in the range [1,28]: year: 2001 month: 2
+>N"Test Student class getAge method
+>O"Test Student class method getDob
+>PFTest Student class method removeStudentFromCourse with invalid input
+>P4Student is already not registered for this course!
+>Q#Test Student class setName method
+>R1Test Student Constructor Fail with future date.
+>R(Date of birth cannot be in the future!
+>S"Test Student class setAge method
+>T"Test Student class method setDob
+>U-Test Student class method getStudentModules
+VRtest CourseProgramme method addModuleToCourse with adding a module already added
+V#Module is already part of course!
+W0Test CourseProgramme method addStudentToCourse
+X=test addStudentToCourse with adding a Student already added
+X+Student is already registered for course!
+Y5Test CourseProgramme method removeStudentFromCourse
+Z/Test CourseProgramme method getCourseStudents
+[(Test CourseProgramme method getEndDate
+\/Test CourseProgramme method addModuleToCourse
+]*Test setEndDate with malformed argument.
+]JValue 35 for dayOfMonth must be in the range [1,31]: year: 2022 month: 5
+^*Test CourseProgramme method getStartDate
+_8Test setStartDate with start date later than end date.
+_%Start date must be before end date!
+`@Test CourseProgramme Constructor with malformed date argument.
+`JValue 31 for dayOfMonth must be in the range [1,28]: year: 2022 month: 2
+a,Test setStartDate with malformed argument.
+aJValue 31 for dayOfMonth must be in the range [1,28]: year: 2021 month: 2
+bFTest CourseProgramme Constructor with start date after the end date.
+b%Start date must be before end date!
+c+Test CourseProgramme method getCourseName
+d4Test CourseProgramme method removeModuleFromCourse
+e;Test removeStudentFromCourse with module already removed.
+e/Student is already not registered for course!
+f%Test setStartDate with valid input.
+g+Test CourseProgramme method setCourseName
+hBTest setStartDate with start date identical to existing end date
+h,Start and end dates must not be identical.
+i:Test removeModuleFromCourse with module already removed.
+i'Module is already not part of course!
+j(Test CourseProgramme method setEndDate
+k.Test CourseProgramme method getCourseModules
+l7Test setEndDate with earlier end date than start date
+l$End date must be after start date!
+mETest CourseProgramme Constructor with idential start and end dates.
+m,Start and end dates must not be identical.
+n)Test CourseProgramme method setCourseId
+o)Test CourseProgramme method getCourseId
+p?Test seEndDate with end date identical to existing Start date
+p,Start and end dates must not be identical.
+q7Test CourseProgramme Constructor with valid argument.
+>r0Test Student class method getRegisteredCourses
+>s4Test Student Constructor Fail with malformed date.
+>sJValue 29 for dayOfMonth must be in the range [1,28]: year: 2001 month: 2
+>t.Test Student class method addStudentToCourse
+>u3Test Student class method removeStudentFromCourse
+>v,Test Student Constructor with valid input 
+>w(Test Student class method getStudentId
+>x;Test Student class method removeModule with invalid input
+>x4Student is already not registered for this course!
+>yATest Student class method addStudentToCourse with invalid input
+>y-Student already registered for this course!
+>z#Test Student class getName method
+>{(Test Student class method removeModule
+>|%Test Student class method addModule
+>}(Test Student class method setStudentId
+>~$Test setDob Fail with future date.
+>~(Date of birth cannot be in the future!
+>8Test Student class method addModule with invalid input
+>0Student is already registered for this module!
+>€'Test Student class method getUsername
+>'Test setDob Fail with Malformed Date.
+>JValue 29 for dayOfMonth must be in the range [1,28]: year: 2001 month: 2
+>‚"Test Student class getAge method
+>ƒ"Test Student class method getDob
+>„FTest Student class method removeStudentFromCourse with invalid input
+>„4Student is already not registered for this course!
+>…#Test Student class setName method
+>†1Test Student Constructor Fail with future date.
+>†(Date of birth cannot be in the future!
+>‡"Test Student class setAge method
+>ˆ"Test Student class method setDob
+>‰-Test Student class method getStudentModules

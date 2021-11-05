@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CT417Assignment1.CourseModuleTest" tests="30" skipped="0" failures="0" errors="0" timestamp="2021-11-05T19:23:12" hostname="DESKTOP-6KM3SC0" time="0.352">
+  <properties/>
+  <testcase name="testRemoveCourseFromModule" classname="CT417Assignment1.CourseModuleTest" time="0.179"/>
+  <testcase name="testGetEnrolledStudents" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testAddStudent" classname="CT417Assignment1.CourseModuleTest" time="0.026"/>
+  <testcase name="testCourseModuleConstructor" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testAssociateCourseWithModule" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testSetModuleId" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testGetModuleName" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testGetModuleId" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testRemoveCourseFromModuleFail" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testRemoveStudent" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testAssociateCourseWithModuleFail" classname="CT417Assignment1.CourseModuleTest" time="0.002"/>
+  <testcase name="testSetModuleName" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testGetAssociatedCourses" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testAddStudentFail" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testRemoveStudentFail" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testRemoveCourseFromModule" classname="CT417Assignment1.CourseModuleTest" time="0.003"/>
+  <testcase name="testGetEnrolledStudents" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testAddStudent" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testCourseModuleConstructor" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testAssociateCourseWithModule" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testSetModuleId" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testGetModuleName" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testGetModuleId" classname="CT417Assignment1.CourseModuleTest" time="0.001"/>
+  <testcase name="testRemoveCourseFromModuleFail" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testRemoveStudent" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testAssociateCourseWithModuleFail" classname="CT417Assignment1.CourseModuleTest" time="0.002"/>
+  <testcase name="testSetModuleName" classname="CT417Assignment1.CourseModuleTest" time="0.002"/>
+  <testcase name="testGetAssociatedCourses" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testAddStudentFail" classname="CT417Assignment1.CourseModuleTest" time="0.0"/>
+  <testcase name="testRemoveStudentFail" classname="CT417Assignment1.CourseModuleTest" time="0.002"/>
+  <system-out><![CDATA[Test CourseModule class method deassociateCourseFromModule
+Test CourseModule class method getEnrolledStudents
+Test CourseModule class method addStudent
+Test CourseModule Class Constructor
+Test CourseModule class method associateCourseWithModule
+Test CourseModule class method setModuleId
+Test CourseModule class method getModuleName
+Test CourseModule class method getModuleId
+Test CourseModule class method deassociateCourseFromModule with invalid input
+Module is already not part of course!
+Test CourseModule class method removeStudent
+Test CourseModule class method associateCourseWithModule with invalid input
+Module is already part of course!
+Test CourseModule class method setModuleName
+Test CourseModule class method getAssociatedCourses
+Test CourseModule class method addStudent with invalid argument
+Student is already registered for this module!
+Test CourseModule class method removeStudent with invalid argument
+Student is already not registered for this module!
+Test CourseModule class method deassociateCourseFromModule
+Test CourseModule class method getEnrolledStudents
+Test CourseModule class method addStudent
+Test CourseModule Class Constructor
+Test CourseModule class method associateCourseWithModule
+Test CourseModule class method setModuleId
+Test CourseModule class method getModuleName
+Test CourseModule class method getModuleId
+Test CourseModule class method deassociateCourseFromModule with invalid input
+Module is already not part of course!
+Test CourseModule class method removeStudent
+Test CourseModule class method associateCourseWithModule with invalid input
+Module is already part of course!
+Test CourseModule class method setModuleName
+Test CourseModule class method getAssociatedCourses
+Test CourseModule class method addStudent with invalid argument
+Student is already registered for this module!
+Test CourseModule class method removeStudent with invalid argument
+Student is already not registered for this module!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

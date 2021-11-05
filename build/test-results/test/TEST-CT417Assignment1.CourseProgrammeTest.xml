@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CT417Assignment1.CourseProgrammeTest" tests="56" skipped="0" failures="0" errors="0" timestamp="2021-11-05T19:23:12" hostname="DESKTOP-6KM3SC0" time="0.19">
+  <properties/>
+  <testcase name="testAddModuleToCourseAlreadyAdded" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testAddStudentToCourse" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testAddStudentToCourseAlreadyAdded" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testRemoveStudentFromCourse" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetCourseStudents" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetEndDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testAddModuleToCourse" classname="CT417Assignment1.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testSetEndDateMalformedInput" classname="CT417Assignment1.CourseProgrammeTest" time="0.003"/>
+  <testcase name="testGetStartDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.002"/>
+  <testcase name="testSetStartDateInputAheadOfEndDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.002"/>
+  <testcase name="testCourseprogrammeConstructorMalformedDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.002"/>
+  <testcase name="testSetStartDateMalformedInput" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testCourseProgrammeConstructorFutureDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetCourseName" classname="CT417Assignment1.CourseProgrammeTest" time="0.009"/>
+  <testcase name="testRemoveModuleFromCourse" classname="CT417Assignment1.CourseProgrammeTest" time="0.003"/>
+  <testcase name="testRemoveStudentFromCourseModuleAlreadyRemoved" classname="CT417Assignment1.CourseProgrammeTest" time="0.005"/>
+  <testcase name="testSetStartDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.002"/>
+  <testcase name="testSetCourseName" classname="CT417Assignment1.CourseProgrammeTest" time="0.003"/>
+  <testcase name="testSetStartDateInputIdenticalToEndDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testRemoveModuleFromCourseModuleAlreadyRemoved" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetEndDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetCourseModules" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetEndDateInputEarlierThanStartDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.002"/>
+  <testcase name="testCourseProgrammeConstructureIdenticalDateArgs" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetCourseId" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetCourseId" classname="CT417Assignment1.CourseProgrammeTest" time="0.002"/>
+  <testcase name="testSetEndDateInputIdenticalToStartDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testCourseProgrammeConstructorValid" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testAddModuleToCourseAlreadyAdded" classname="CT417Assignment1.CourseProgrammeTest" time="0.002"/>
+  <testcase name="testAddStudentToCourse" classname="CT417Assignment1.CourseProgrammeTest" time="0.003"/>
+  <testcase name="testAddStudentToCourseAlreadyAdded" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testRemoveStudentFromCourse" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetCourseStudents" classname="CT417Assignment1.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testGetEndDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testAddModuleToCourse" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetEndDateMalformedInput" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetStartDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetStartDateInputAheadOfEndDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testCourseprogrammeConstructorMalformedDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetStartDateMalformedInput" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testCourseProgrammeConstructorFutureDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetCourseName" classname="CT417Assignment1.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testRemoveModuleFromCourse" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testRemoveStudentFromCourseModuleAlreadyRemoved" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetStartDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.007"/>
+  <testcase name="testSetCourseName" classname="CT417Assignment1.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testSetStartDateInputIdenticalToEndDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testRemoveModuleFromCourseModuleAlreadyRemoved" classname="CT417Assignment1.CourseProgrammeTest" time="0.002"/>
+  <testcase name="testSetEndDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testGetCourseModules" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetEndDateInputEarlierThanStartDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testCourseProgrammeConstructureIdenticalDateArgs" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetCourseId" classname="CT417Assignment1.CourseProgrammeTest" time="0.0"/>
+  <testcase name="testGetCourseId" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testSetEndDateInputIdenticalToStartDate" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <testcase name="testCourseProgrammeConstructorValid" classname="CT417Assignment1.CourseProgrammeTest" time="0.001"/>
+  <system-out><![CDATA[test CourseProgramme method addModuleToCourse with adding a module already added
+Module is already part of course!
+Test CourseProgramme method addStudentToCourse
+test addStudentToCourse with adding a Student already added
+Student is already registered for course!
+Test CourseProgramme method removeStudentFromCourse
+Test CourseProgramme method getCourseStudents
+Test CourseProgramme method getEndDate
+Test CourseProgramme method addModuleToCourse
+Test setEndDate with malformed argument.
+Value 35 for dayOfMonth must be in the range [1,31]: year: 2022 month: 5
+Test CourseProgramme method getStartDate
+Test setStartDate with start date later than end date.
+Start date must be before end date!
+Test CourseProgramme Constructor with malformed date argument.
+Value 31 for dayOfMonth must be in the range [1,28]: year: 2022 month: 2
+Test setStartDate with malformed argument.
+Value 31 for dayOfMonth must be in the range [1,28]: year: 2021 month: 2
+Test CourseProgramme Constructor with start date after the end date.
+Start date must be before end date!
+Test CourseProgramme method getCourseName
+Test CourseProgramme method removeModuleFromCourse
+Test removeStudentFromCourse with module already removed.
+Student is already not registered for course!
+Test setStartDate with valid input.
+Test CourseProgramme method setCourseName
+Test setStartDate with start date identical to existing end date
+Start and end dates must not be identical.
+Test removeModuleFromCourse with module already removed.
+Module is already not part of course!
+Test CourseProgramme method setEndDate
+Test CourseProgramme method getCourseModules
+Test setEndDate with earlier end date than start date
+End date must be after start date!
+Test CourseProgramme Constructor with idential start and end dates.
+Start and end dates must not be identical.
+Test CourseProgramme method setCourseId
+Test CourseProgramme method getCourseId
+Test seEndDate with end date identical to existing Start date
+Start and end dates must not be identical.
+Test CourseProgramme Constructor with valid argument.
+test CourseProgramme method addModuleToCourse with adding a module already added
+Module is already part of course!
+Test CourseProgramme method addStudentToCourse
+test addStudentToCourse with adding a Student already added
+Student is already registered for course!
+Test CourseProgramme method removeStudentFromCourse
+Test CourseProgramme method getCourseStudents
+Test CourseProgramme method getEndDate
+Test CourseProgramme method addModuleToCourse
+Test setEndDate with malformed argument.
+Value 35 for dayOfMonth must be in the range [1,31]: year: 2022 month: 5
+Test CourseProgramme method getStartDate
+Test setStartDate with start date later than end date.
+Start date must be before end date!
+Test CourseProgramme Constructor with malformed date argument.
+Value 31 for dayOfMonth must be in the range [1,28]: year: 2022 month: 2
+Test setStartDate with malformed argument.
+Value 31 for dayOfMonth must be in the range [1,28]: year: 2021 month: 2
+Test CourseProgramme Constructor with start date after the end date.
+Start date must be before end date!
+Test CourseProgramme method getCourseName
+Test CourseProgramme method removeModuleFromCourse
+Test removeStudentFromCourse with module already removed.
+Student is already not registered for course!
+Test setStartDate with valid input.
+Test CourseProgramme method setCourseName
+Test setStartDate with start date identical to existing end date
+Start and end dates must not be identical.
+Test removeModuleFromCourse with module already removed.
+Module is already not part of course!
+Test CourseProgramme method setEndDate
+Test CourseProgramme method getCourseModules
+Test setEndDate with earlier end date than start date
+End date must be after start date!
+Test CourseProgramme Constructor with idential start and end dates.
+Start and end dates must not be identical.
+Test CourseProgramme method setCourseId
+Test CourseProgramme method getCourseId
+Test seEndDate with end date identical to existing Start date
+Start and end dates must not be identical.
+Test CourseProgramme Constructor with valid argument.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
